@@ -20,6 +20,9 @@
 \usepackage[dvipsnames,svgnames]{xcolor}
 \usepackage[strict]{changepage} % 提供一个 adjustwidth 环境
 \usepackage{framed} % 实现方框效果
+\usepackage{tcolorbox}
+\tcbuselibrary{skins, breakable, theorems}
+\NewTcbTheorem[number within=section]{Definition}{定义}{colback=green!5,colframe=green!35!black,fonttitle=\bfseries}{def}
 
 \geometry{a4paper,centering,scale=0.8}
 % environment derived from framed.sty: see leftbar environment definition
@@ -2333,7 +2336,16 @@ For $\zeta>1$
 
 其中$T$和$\Omega$的关系为$\Omega=\frac{2\pi}{T}$.
 
-若$f(t)$为周期信号，周期为$T$,角频率为$\Omega=\frac{2\pi}{T}$,且函数满足狄里赫利条件时，在$(t_0,t_0+T)$中有：
+若$f(t)$为周期信号，周期为$T$,角频率为$\Omega=\frac{2\pi}{T}$,且函数满足狄里赫利条件：
+\begin{Definition}{狄里赫利条件}{}
+    \begin{itemize}
+        \item 在一周期内，连续或只有有限个第一类间断点；
+        \item 在一周期内，极大值和极小值的数目应是有限个；
+        \item 在一周期内，信号是绝对可积的。
+    \end{itemize}
+\end{Definition}
+
+则在$(t_0,t_0+T)$中有：
 \begin{equation}
     \begin{split}
         f(t)&=\frac{a_0}{2}+\sum_{n = 1}^{\infty} a_ncos(n\Omega t)+ \sum_{n = 1}^{\infty} b_nsin(n\Omega t)\\
