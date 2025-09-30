@@ -11,8 +11,8 @@
 \usepackage{caption}
 \usepackage{graphicx, subfig}
 \usepackage{fontspec} 
-\setmainfont{Times New Roman}
-\setCJKmainfont{SimSun}
+% \setmainfont{Times New Roman}
+% \setCJKmainfont{SimSun}
 \usepackage{newtxtext}
 \usepackage[colorlinks,linkcolor=black,anchorcolor=blue,citecolor=green]{hyperref}
 \usepackage{geometry}
@@ -51,6 +51,9 @@
 \date{\today}
 \begin{document}
 \maketitle
+
+\newpage
+
 \section{控制工程引言}
 \subsection{控制理论历史发展}
 \begin{itemize}
@@ -107,6 +110,9 @@
     \item Design Procedures：建立系统的数学模型并调整compensator的参数，以对系统的性能进行分析验证；当数学模型建立完成后，需要构筑一个系统雏形并进行开环系统测试；当闭环系统的稳定性得到保证后，对系统进行闭环，并测试闭环系统的性能。这个过程中得到的雏形系统因为忽略了许多效应，其实际性能会与理论预测相偏离，因此初步设计的系统难以满足性能需求，故而要对系统进行不断地完善和调整以使得其满足性能需求，并要保证系统的可靠性和经济性。
     \item 
 \end{formal}
+
+\newpage
+
 \section{控制系统数学建模}
 \subsection{引言}
 \begin{formal}
@@ -909,6 +915,8 @@ to the number of integrators involved in the system.(系统的状态变量数$\L
 
 因此对于多输入系统，通过泰勒展开围绕工作点附近进行线性化的方法也是适用的。
 
+\newpage
+
 \section{力学系统和电子系统的数学模型}
 \subsection{Introduction}
 \begin{formal}
@@ -1242,7 +1250,11 @@ to the number of integrators involved in the system.(系统的状态变量数$\L
     \label{circuittable3-1} %此处的label相当于一个图片的专属标志，目的是方便上下文的引用
 \end{figure}
 
+\newpage
+
 \section{流体系统和热系统的数学模型}
+
+\newpage
 
 \section{瞬态及稳态响应分析}
 \subsection{引言}
@@ -2319,6 +2331,8 @@ For $\zeta>1$
 \end{figure}
 
 之所以称三个静态误差常数分别为“位移”、“速度”、“加速度”是因为在定义时他们三个量之间的“形式上”满足导数关系,这一点从拉普拉斯变换的微积分特性可以看出。但这并不代表他们的单位是导数关系，从这三个量的基本定义也可以看出，这三个量的维度（一般为单位）和输入输出信号是相同的，所以在单位上这三个量是一致的。
+
+\newpage
 
 \section{控制系统分析及基于根轨迹法的系统设计}
 \subsection{傅里叶级数、傅里叶变换和拉普拉斯变换回顾}
