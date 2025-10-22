@@ -251,7 +251,7 @@ Transfer function = G(s) &= \frac{\mathscr{L}[output]}{\mathscr{L}[input]}|_{zer
 \end{formal}
 因为要将输出信号传输回输入信号与输入信号进行比较，因此要先将输出信号的形式进行转换，转换为与输入信号相同维度（例如相同单位）的信号，再与输入信号相比较。在图\ref{BlockDiagramofaClosed-LoopSystem}中，这一转换是通过传输函数为H(s)的block实现的，其中$B(s)=H(s)C(s)$。
 \begin{formal}
-    Open-Loop Transfer Function:以图\ref{BlockDiagramofaClosed-LoopSystem}为例，反馈信号B（s）与actuating error信号E（s）的比值为open-loop transfer function，即$Open-loop transfer function = \frac{B(s)}{E(s)} = G(s)H(s)$
+    Open-Loop Transfer Function:以图\ref{BlockDiagramofaClosed-LoopSystem}为例，通过移除求和元件断开环路后，反馈信号B（s）与actuating error信号E（s）的比值为open-loop transfer function，即$Open-loop transfer function = \frac{B(s)}{E(s)} = G(s)H(s)$
 \end{formal}
 \begin{formal}
     Feedforward Transfer Function:以图\ref{BlockDiagramofaClosed-LoopSystem}为例，输出信号C（s）与actuating error信号E（s）的比值为feedforward transfer function，即$Feedforward transfer function = \frac{C(s)}{E(s)} = G(s)$
